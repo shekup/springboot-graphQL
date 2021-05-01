@@ -2,9 +2,11 @@
 I tried implementing https://www.graphql-java.com/tutorials/getting-started-with-spring-boot/
 but found later that it is outdated and it didnt work for me. 
 
-I created this project which works and is simple too as it does not require GraphQLProvider and GraphQLDatafetchers.  Instead uses a simple Query class that does everything in background.  In order to use GraphQL, only two things are neeeded:
-1. "schema.graphqls" file in resources to define the queries
-2. A class that implements "GraphQLQueryResolver".  In this project it is named as "Query" class. 
+I created this project which works and is simple too as it does not require GraphQLProvider and GraphQLDatafetchers.  Instead uses a simple Query class that does everything in background.  In order to use GraphQL, only three things are neeeded:
+1. Right dependencies in "pom.xml".  I tried many projects and the ones working are uncommented in the pom file. 
+2. "schema.graphqls" file in resources to define the queries
+3. A class that implements "GraphQLQueryResolver".  In this project it is named as "Query" class. 
+
 In "schema.graphqls" the queries are defined and inside the "Query" class has implementation of the queries, that is, how queries will fetch data. 
 GraphQL can be used to create data as well but in this project, I have only used it to query. 
 
