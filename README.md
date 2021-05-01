@@ -12,6 +12,7 @@ The project is a hypothetical basically basic library with two entities: 'book" 
 The book & author can then be queried using GraphQL.  
 
 To test/run GraphQL queries.  Run the project and hit 'http://localhost:8080/graphiql' in browser.  Execute the query, such as for querying a book by id send query:
+
 query {
   book(id: 2) 
   {
@@ -23,6 +24,7 @@ query {
 }
 
 To query an author by id, use query:
+
 query {
   author(id: 1) 
   {
